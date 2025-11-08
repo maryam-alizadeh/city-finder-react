@@ -1,0 +1,54 @@
+.searchWrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.searchWrapper input {
+  width: 100%;
+  max-width: 350px;
+  height: 46px;
+  font-size: 1.1rem;
+  padding: 0 18px;
+  border-radius: 10px;
+  border: 1px solid #00eaff;
+  background: transparent;
+  color: #fff;
+  box-shadow: 0 0 12px #00eaff55;
+  transition: 0.2s ease;
+    z-index: 2;
+}
+
+.searchWrapper input:focus {
+  box-shadow: 0 0 18px #00eaffaa;
+  outline: none;
+}
+
+.inputOverlay {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+}
+
+.suggestion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 18px;
+  width: 100%;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 3;
+  
+}
+
+.suggestionFaded {
+  color: rgba(255, 255, 255, 0.15);
+}
